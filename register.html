@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>报名 – 水管DIY工作坊</title>
+  <style>
+    body { font-family: 'Segoe UI', Arial, sans-serif; background: #f5f6f8; margin: 0; color: #1f1f1f; }
+    header { background: linear-gradient(120deg, #0c5dbb, #13a3c7); padding: 32px 20px; text-align: center; color: #fff; }
+    main { max-width: 720px; margin: -30px auto 60px; background: #fff; border-radius: 16px; box-shadow: 0 15px 45px rgba(15,40,90,0.12); padding: 40px; }
+    h1, h2 { margin-top: 0; }
+    label { display: block; font-weight: 600; margin: 18px 0 6px; }
+    input[type="text"], input[type="email"], textarea { width: 100%; padding: 12px 14px; border-radius: 10px; border: 1px solid #d9dbe1; font-size: 1rem; box-sizing: border-box; }
+    textarea { min-height: 110px; resize: vertical; }
+    .radio-group, .checkbox-group { display: grid; gap: 8px; margin: 10px 0 4px; }
+    .radio-option, .checkbox-option { background: #f7f8fc; border-radius: 10px; padding: 10px 12px; border: 1px solid transparent; }
+    .radio-option input, .checkbox-option input { margin-right: 10px; }
+    .help { font-size: 0.92rem; color: #606274; }
+    button { margin-top: 24px; width: 100%; background: #0c5dbb; color: #fff; border: none; border-radius: 999px; padding: 14px; font-size: 1.05rem; font-weight: 600; cursor: pointer; }
+    button:hover { background: #0a4c95; }
+    .info-box { background: #f1f7ff; border-left: 4px solid #0c5dbb; padding: 14px 18px; border-radius: 12px; margin-bottom: 18px; }
+    .tng-box { background: #fffaf1; border: 1px solid #ffe2b5; border-radius: 16px; padding: 18px; margin-bottom: 22px; }
+    .tng-box p { margin: 6px 0; }
+    @media (max-width: 640px) { main { padding: 26px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>水管DIY工作坊 – 报名表</h1>
+    <p>2026年4月11日（星期六） · 上午9:00 – 下午1:00 · 
+    <p> Damansara Damai</p>
+    <p>实操课程 · 仅限10人</p>
+  </header>
+
+  <main>
+    <div class="info-box">
+      <p><strong>步骤1：</strong>填写并提交此表格</p>
+      <p><strong>步骤2：</strong>通过 Touch 'n Go 或银行转账付款</p>
+      <p><strong>步骤3：</strong>将付款截图发送至 WhatsApp +6013-308-3049 或 Email：purchasingpoweruser@gmail.com 确认名额</p>
+    </div>
+
+    <div class="tng-box">
+      <h2 style="margin-top:0; font-size:1.15rem; color:#b06900;">Touch 'n Go eWallet · Ong Soon Chong</h2>
+      <p><strong>TNG账号 / 手机号：</strong>133083049</p>
+      <p><em>备注：</em>DIY Plumbing Workshop</p>
+    </div>
+
+    <form action="https://formsubmit.co/purchasingpoweruser@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="新的水管DIY报名">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://ronald-tech888.github.io/diy-plumbing-workshop/thanks.html">
+
+      <label for="full-name">姓名 *</label>
+      <input type="text" id="full-name" name="姓名" placeholder="例如：陈伟明" required>
+
+      <label for="email">电子邮箱 *</label>
+      <input type="email" id="email" name="Email" placeholder="you@example.com" required>
+
+      <label for="whatsapp">WhatsApp / 手机号码 *</label>
+      <input type="text" id="whatsapp" name="WhatsApp / 手机" placeholder="例如：+6013-308-3049" required>
+      <p class="help">如在马来西亚以外，请包含国家代码。</p>
+
+      <label>票种选择 *</label>
+      <div class="radio-group">
+        <label class="radio-option"><input type="radio" name="票种" value="早鸟价 – RM280" required>早鸟价（4月1日前）– RM280</label>
+        <label class="radio-option"><input type="radio" name="票种" value="标准价 – RM350">标准价 – RM350</label>
+        <label class="radio-option"><input type="radio" name="票种" value="双人同行 – RM520">双人同行（2人）– RM520</label>
+      </div>
+
+      <label for="buddy">同行者姓名（如购买双人票）</label>
+      <input type="text" id="buddy" name="同行者" placeholder="仅限双人票填写">
+
+      <label>付款方式 *</label>
+      <div class="radio-group">
+        <label class="radio-option"><input type="radio" name="付款方式" value="Touch 'n Go" required>Touch 'n Go（转账至 133083049）</label>
+        <label class="radio-option"><input type="radio" name="付款方式" value="HLB转账">HLB银行转账（04100099089 · Ong Soon Chong）</label>
+      </div>
+
+      <label>付款截图发送方式 *</label>
+      <div class="radio-group">
+        <label class="radio-option"><input type="radio" name="发送方式" value="WhatsApp" required>WhatsApp（+6013-308-3049）</label>
+        <label class="radio-option"><input type="radio" name="发送方式" value="Email">Email（purchasingpoweruser@gmail.com）</label>
+      </div>
+
+      <label for="notes">备注 / 想解决的水管问题（选填）</label>
+      <textarea id="notes" name="备注" placeholder="例如：租屋问题、水压问题、漏水情况等"></textarea>
+
+      <label class="checkbox-option" style="margin-top:22px;">
+        <input type="checkbox" name="确认条款" value="已同意" required>
+        我了解：名额需付款并提交付款截图后才确认；可更换人选，但课程前3天内不接受退款。
+      </label>
+
+      <button type="submit">提交并进行付款</button>
+    </form>
+
+    <p class="help" style="margin-top:24px;">若表格无法提交，请直接Email资料至 purchasingpoweruser@gmail.com</p>
+  </main>
+</body>
+</html>
